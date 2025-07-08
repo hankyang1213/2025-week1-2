@@ -1,0 +1,106 @@
+.header{
+    width: 100%;
+    padding: 151px 0px;
+    background-image: url(../image/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 64px;
+    @media(max-width:768px){
+        padding: 75.5px 0px;
+    }
+}
+
+.container{
+    
+    .preface{
+        margin-bottom: 48px;
+        padding: 32px;
+        background-color:#f5fee7;
+        text-align: center;
+        h3{
+            margin-bottom: 12px;
+        }
+        .text_style{
+            margin-bottom: 4px;
+        }
+    }
+    .image{
+        margin-bottom: 24px;
+    }
+    .lnt{
+        padding-bottom: 48px;
+        margin-bottom: 48px;
+        border-bottom: 1px solid gray;
+        h3{
+            margin-bottom: 16px;
+        }
+        .text_style{
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+    }
+    .history{
+        padding-bottom: 36px;
+        border-bottom: 1px solid gray;
+        p{
+            margin-bottom: 12px;
+        }
+        .text_style{
+            i{
+                font-size: 5px;
+                padding-left: 8px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .idea{
+        padding-bottom: 36px;
+        border-bottom: 1px solid gray;
+        p{
+          border-left: 5px solid gray;
+          margin-bottom: 12px;
+          padding-left: 12px;
+        }
+    }
+    .short_story{
+        padding-bottom: 36px;
+        margin-bottom: 64px;
+        border-bottom: 1px solid gray;
+        .text_style{
+            padding:8px 0px;
+        }
+        .short_story_arrow{
+            font-size: 15px;
+            color:#57A203;
+        }
+        .short_story_link{
+            display: inline-block;
+            border-bottom: #57A203 1px solid;
+            padding-bottom: 4px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.8px;
+            color:#57A203;
+            &:hover{
+                color: aqua;
+            }
+        }
+    }
+}
+
+.footer{
+    text-align: center;
+    padding: 64px 0px;    
+    width: 100%;
+    background-color: #f8f9fa;
+    P{
+        font-family: "Noto Sans TC", sans-serif;
+        padding-bottom: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.7px;
+    }
+}

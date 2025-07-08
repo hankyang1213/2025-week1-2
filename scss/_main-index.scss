@@ -1,0 +1,206 @@
+.header{
+    padding: 16px 0px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo_title{
+        font-family: "Mina", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.88px;
+        padding: 8px 12px;
+        margin-right: 48px;
+        position: relative;
+        .material-icons-outlined{
+            font-size: 10px;
+            color: greenyellow;
+            background-color: greenyellow;
+            border-radius: 100%;
+            position: absolute;
+            left:110px;
+            top: 10px;
+            z-index: -1;
+        }
+    }
+    .list_member{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        nav .list{
+            display: flex;
+            gap:40px;
+            .btn{
+                &:hover{
+                    color: chartreuse;
+                    border-bottom: 1px solid chartreuse;
+                }
+            }            
+        }
+        .member a{
+            display: inline-block;
+            padding: 15px;
+            font-size: 18px;
+            color: #212529;
+            &:hover{
+                color: red;                
+            }     
+        }
+    }
+}
+
+.gu_pg{
+    margin-bottom: 24px;
+    .btn{
+        padding: 0px;
+    }
+    span{
+        padding-right: 12px;
+    }
+    .color_ch{
+        padding-right: 12px;
+        color:#6C757D;
+    }
+}
+
+/*商品分列及商品選購*/
+.allshoe{
+    margin-bottom: 32px;
+    h2{
+        margin-bottom: 24px;
+    }
+    .allshop_list{
+        display: flex;
+           gap:24px;
+           .allshop_list_sort{
+            display: flex;
+            flex-direction: column;
+            gap:16px;
+            li{
+                width: 172px;
+                margin-right:24px;
+                a{
+                    &:hover{
+                        color: chartreuse;
+                        border-bottom: 1px solid chartreuse;
+                    }
+                }
+            }
+        }
+        .allshop_list_shoe{
+            .allshop_list_shoe_cha{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap:24px;
+                margin-bottom: 48px;        
+                li{
+                    max-width:342.67px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    &:hover{
+                        border: 1px solid greenyellow;
+                    }
+                }
+            }
+        }
+        .allshop_list_shoe_page{
+            display: flex;
+            justify-content: center;
+            li{
+                .btn{
+                    margin-right: 12px;
+                    padding:11.87px 15.6px;                       
+                }  
+                .num{
+                    padding: 8px 15px;
+                    &:hover{
+                        background-color: #c0fa73;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*加入會員&註冊*/
+.join_member{
+    width: 100%;
+    background-color:#E8fec5;
+    padding:33.5px 0px;
+    display: flex;
+    gap:24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    .join_member_discount{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 1.2px;
+    }
+    .join_member_register{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing:0.8px;
+        color: #ffffff;
+        background-color: black;
+        padding: 12px 24px;
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+/*頁尾*/
+.footer_logo{
+    display: flex;
+    justify-content: space-between;
+    margin:64px 0px 24px 0px;
+    .logo_title{
+        font-family: "Mina", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.88px;
+        padding: 8px 12px;
+        margin-right: 48px;
+        position: relative;
+        .material-icons-outlined{
+            font-size: 10px;
+            color: greenyellow;
+            background-color: greenyellow;
+            border-radius: 100%;
+            position: absolute;
+            left:110px;
+            top: 10px;
+            z-index: -1;
+        }
+    }
+    nav .list{
+        display: flex;
+        gap:40px;
+        .btn{
+            &:hover{
+                color: chartreuse;
+                border-bottom: 1px solid chartreuse;
+            }
+        }            
+    }
+}
+.footer_statement{
+    padding-top: 32px;
+    margin-bottom:64px;
+    p{
+        margin-bottom: 4px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height:150%;
+        letter-spacing:0.7px;
+        color:#6c757D;
+    }
+}

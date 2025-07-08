@@ -1,0 +1,203 @@
+.header{
+    padding: 16px 0px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo_title{
+        font-family: "Mina", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.88px;
+        padding: 8px 12px;
+        margin-right: 48px;
+        position: relative;
+        .material-icons-outlined{
+            font-size: 10px;
+            color: greenyellow;
+            background-color: greenyellow;
+            border-radius: 100%;
+            position: absolute;
+            left:110px;
+            top: 10px;
+            z-index: -1;
+        }
+    }
+    .list_member{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        nav .list{
+            display: flex;
+            gap:40px;
+            .btn{
+                &:hover{
+                    color: chartreuse;
+                    border-bottom: 1px solid chartreuse;
+                }
+            }            
+        }
+        .member a{
+            display: inline-block;
+            padding: 15px;
+            font-size: 18px;
+            color: #212529;
+            &:hover{
+                color: red;                
+            }     
+        }
+    }
+}
+.shoe_ctn{
+    width: 100%;
+    display: flex;
+    gap:24px;
+    .shoe_ctn_detail_image{
+        max-width:746px;
+        display: flex;
+        flex-wrap: wrap;
+        gap:8px;
+        li{
+            max-width: 49%;
+        }
+    }
+    .shoe_ctn_int{
+        max-width: 526px;
+        .btn{
+            color: #6c757d;
+            padding: 0px 12px;
+        }
+        .pd_ch{
+            padding:0px 12px 0px 0px;
+        }
+        .col_ch{
+            color: #212529;
+        }
+        .shop_int{
+            width: 100%;
+            margin: 16px 0px 32px 0px;
+        }
+    }
+    .shoe_ctn_style{
+        margin-bottom: 48px;
+        .shoe_color{
+            color:#212529;            
+        }
+        .shoe_color_list{
+            display: flex;
+            margin-top: 8px;
+            margin-bottom: 32px;
+            li{
+                max-width: 64px;
+                padding-right: 8px;
+                &:hover{
+                    border: 1px solid black;
+                }
+                .btn{
+                    display: block;
+                    padding: 0px 0px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0.8px;
+                    text-align: center;
+                }
+            }
+        }
+        .shoe_size_list{
+            display: flex;
+            justify-content: flex-start;
+            gap:8px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            li{
+                border: 1px solid #DEE2E6;
+                &:hover{
+                    border-color: #212529;
+                }
+                .size_miss{
+                    color:#DEE2E6;
+                }
+            }
+        }
+        .shoe_size_remain{
+            color: #d74f4f;
+        }
+    }
+    .collect_resreve{
+        display: flex;
+        margin-bottom: 32px;
+        gap:8px;
+        .btn{
+            width:48%;
+            text-align: center;
+            padding: 12px 0px;
+            border: 1px solid #212529;
+        }
+        .collect{
+            &:hover{
+                color: white;
+                background-color: #212529;
+            }
+        }
+        .resreve{
+            color: white;
+            background-color: #212529;
+            &:hover{
+                color: #212529;
+                background-color: white;
+            }
+        }
+    }
+    .shoe_material{
+        border-bottom: 1px solid #6c757d;
+        padding: 12px 0px;
+        h4{
+            margin-bottom: 4px;
+        }
+        span{
+            display: block;
+            margin-bottom: 0px;
+            color: #6c757D;
+        }
+    }
+        .shoe_notice{
+        border-bottom: 1px solid #6c757d;
+        padding: 12px 0px;
+        h4{
+            margin-bottom: 4px;
+        }
+        span{
+            display: block;
+            margin-bottom: 0px;
+            color: #6c757D;
+        }
+    }
+    .shoe_method{
+        border-bottom: 1px solid #6c757d;
+        padding: 12px 0px;
+        h4{
+            margin-bottom: 4px;
+        }
+        span{
+            display: block;
+            margin-bottom: 0px;
+            color: #6c757D;
+        }
+    }
+}
+/*受歡迎鞋款*/
+.shoe_ctn_popular{
+        padding: 48px 0px;
+        display: flex;
+        flex-direction: column;
+        gap:16px;        
+        .shoe_ctn_popular_list{
+            display: flex;
+            gap: 24px;
+        }
+}
+
+
