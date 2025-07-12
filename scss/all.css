@@ -700,9 +700,7 @@ nav {
   .footer_logo {
     flex-direction: column;
     align-items: center;
-  }
-  .footer_logo h1 {
-    text-align: center;
+    width: 100%;
   }
 }
 .footer_logo .logo_title {
@@ -715,6 +713,12 @@ nav {
   margin-right: 48px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .footer_logo .logo_title {
+    margin: 0px;
+    padding: 0px;
+  }
+}
 .footer_logo .logo_title .material-icons-outlined {
   font-size: 10px;
   color: greenyellow;
@@ -724,6 +728,12 @@ nav {
   left: 110px;
   top: 10px;
   z-index: -1;
+}
+@media (max-width: 768px) {
+  .footer_logo .logo_title .material-icons-outlined {
+    left: 100px;
+    top: 2px;
+  }
 }
 .footer_logo nav .list {
   display: flex;
