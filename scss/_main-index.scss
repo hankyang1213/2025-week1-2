@@ -110,15 +110,27 @@
     h2{
         margin-bottom: 24px;
     }
+    @media screen and (max-width:768px) {
+        padding:0px 12px;
+    }
     .allshop_list{
         display: flex;
+        @media screen and (max-width:768px) {
+            padding: 0px 12px;
+            flex-direction: column;
+            gap:24px;
+        }
            gap:24px;
            .allshop_list_sort{
             display: flex;
             flex-direction: column;
+            @media screen and (max-width:768px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
             gap:16px;
             li{
-                width: 172px;
+                max-width: 172px;
                 margin-right:24px;
                 a{
                     &:hover{
@@ -142,6 +154,10 @@
                     gap: 12px;
                     &:hover{
                         border: 1px solid greenyellow;
+                    }
+                    @media screen and (max-width:768px) {
+                        max-width:45%;
+                        gap: 0px;
                     }
                 }
             }

@@ -397,6 +397,12 @@ h5 {
   max-width: 1296px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 
 .btn {
   color: #212529;
@@ -570,17 +576,35 @@ nav {
 .allshoe h2 {
   margin-bottom: 24px;
 }
+@media screen and (max-width: 768px) {
+  .allshoe {
+    padding: 0px 12px;
+  }
+}
 .allshoe .allshop_list {
   display: flex;
   gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  .allshoe .allshop_list {
+    padding: 0px 12px;
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 .allshoe .allshop_list .allshop_list_sort {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+@media screen and (max-width: 768px) {
+  .allshoe .allshop_list .allshop_list_sort {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .allshoe .allshop_list .allshop_list_sort li {
-  width: 172px;
+  max-width: 172px;
   margin-right: 24px;
 }
 .allshoe .allshop_list .allshop_list_sort li a:hover {
@@ -602,6 +626,12 @@ nav {
 }
 .allshoe .allshop_list .allshop_list_shoe .allshop_list_shoe_cha li:hover {
   border: 1px solid greenyellow;
+}
+@media screen and (max-width: 768px) {
+  .allshoe .allshop_list .allshop_list_shoe .allshop_list_shoe_cha li {
+    max-width: 45%;
+    gap: 0px;
+  }
 }
 .allshoe .allshop_list .allshop_list_shoe_page {
   display: flex;
