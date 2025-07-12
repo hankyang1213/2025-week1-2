@@ -589,22 +589,22 @@ nav {
   .allshoe .allshop_list {
     padding: 0px 12px;
     flex-direction: column;
-    gap: 24px;
   }
 }
 .allshoe .allshop_list .allshop_list_sort {
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 @media screen and (max-width: 768px) {
   .allshoe .allshop_list .allshop_list_sort {
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 .allshoe .allshop_list .allshop_list_sort li {
-  max-width: 172px;
   margin-right: 24px;
 }
 .allshoe .allshop_list .allshop_list_sort li a:hover {
