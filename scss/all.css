@@ -601,11 +601,18 @@ nav {
   .allshoe .allshop_list .allshop_list_sort {
     width: 100%;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 .allshoe .allshop_list .allshop_list_sort li {
   margin-right: 24px;
+}
+@media (max-width: 768px) {
+  .allshoe .allshop_list .allshop_list_sort li {
+    margin-right: 0px;
+    width: 30%;
+  }
 }
 .allshoe .allshop_list .allshop_list_sort li a:hover {
   color: chartreuse;

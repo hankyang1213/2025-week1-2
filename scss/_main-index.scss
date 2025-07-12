@@ -133,6 +133,10 @@
             gap:16px;
             li{
                 margin-right:24px;
+                @media(max-width:768px) {
+                    margin-right: 0px;
+                    width: 30%;
+                }
                 a{
                     &:hover{
                         color: chartreuse;
