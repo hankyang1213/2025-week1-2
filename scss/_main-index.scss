@@ -4,39 +4,79 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo_title{
-        font-family: "Mina", sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0.88px;
-        padding: 8px 12px;
-        margin-right: 48px;
-        position: relative;
-        .material-icons-outlined{
-            font-size: 10px;
-            color: greenyellow;
-            background-color: greenyellow;
-            border-radius: 100%;
-            position: absolute;
-            left:110px;
-            top: 10px;
-            z-index: -1;
-        }
+    @media(max-width:768px){
+        flex-direction: column;
     }
+    .logo_member-rwd{
+        @media(max-width:768px){
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo_title{
+            font-family: "Mina", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.88px;
+            padding: 8px 12px;
+            margin-right: 48px;
+            position: relative;
+            .material-icons-outlined{
+                font-size: 10px;
+                color: greenyellow;
+                background-color: greenyellow;
+                border-radius: 100%;
+                position: absolute;
+                left:110px;
+                top: 10px;
+                z-index: -1;
+            }
+        }
+        .member-rwd a{
+            display:none;
+            padding: 15px;
+            font-size: 18px;
+            color: #212529;
+            &:hover{
+                color: red;                
+            }
+            @media(max-width:768px){
+                display: inline-block;
+            }     
+        }
+    }        
     .list_member{
         width: 100%;
         display: flex;
         justify-content: space-between;
         nav .list{
+            width: 100%;
             display: flex;
             gap:40px;
+            @media(max-width:768px){
+                gap:0px;
+                justify-content: space-between;
+                li{
+                    width: 48%;
+                    text-align: center;
+                    /*&:hover{
+                        background-color: #c0fa73;
+                        color: #ffffff;                    
+                    }*/                   
+                }
+            }            
             .btn{
                 &:hover{
                     color: chartreuse;
                     border-bottom: 1px solid chartreuse;
                 }
             }            
+        }
+        .member{
+             @media(max-width:768px){
+                display: none;
+            }
         }
         .member a{
             display: inline-block;
@@ -45,7 +85,7 @@
             color: #212529;
             &:hover{
                 color: red;                
-            }     
+            }
         }
     }
 }
