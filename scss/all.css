@@ -666,6 +666,11 @@ nav {
   align-items: center;
   margin-top: 48px;
 }
+@media (max-width: 768px) {
+  .join_member {
+    flex-direction: column;
+  }
+}
 .join_member .join_member_discount {
   font-weight: 700;
   font-size: 24px;
