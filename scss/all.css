@@ -347,6 +347,10 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+nav {
+  width: 100%;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -397,7 +401,7 @@ h5 {
   max-width: 1296px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
     padding-left: 12px;
     padding-right: 12px;
@@ -447,16 +451,102 @@ h5 {
   letter-spacing: 0.8px;
   text-align: center;
   color: #212529;
-  border: 1px solid #DEE2E6;
+  border: 1px solid #999999;
 }
 
-/*行動版 col*/
-col-2 {
+/*網格設置*/
+.container_new {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container_new {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.list_n {
+  /*margin-left: -12px;
+  margin-right: -12px;
+  @media(max-width:768px){
+      margin-left: -6px;
+      margin-right: -6px;
+  }*/
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-w {
+  flex-wrap: wrap;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.col-6 {
   width: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
-nav {
+.col-3 {
   width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.md-40 {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .col-md-2 {
+    width: 50%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-md-4 {
+    width: 100%;
+    padding: 0px;
+  }
+  .md-md-24 {
+    margin-bottom: 24px;
+  }
+}
+.h2_new {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 2.4px;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.px-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.h1_n {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .h1_n {
+    font-size: 48px;
+  }
 }
 
 .header {
@@ -478,7 +568,10 @@ nav {
     justify-content: space-between;
   }
 }
-.header .logo_member-rwd .logo_title {
+.header .logo_member-rwd a {
+  color: #212529;
+}
+.header .logo_member-rwd a .logo_title {
   font-family: "Mina", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -488,7 +581,7 @@ nav {
   margin-right: 48px;
   position: relative;
 }
-.header .logo_member-rwd .logo_title .material-icons-outlined {
+.header .logo_member-rwd a .logo_title .material-icons-outlined {
   font-size: 10px;
   color: greenyellow;
   background-color: greenyellow;
@@ -906,4 +999,251 @@ nav {
 .shoe_ctn_popular .shoe_ctn_popular_list {
   display: flex;
   gap: 24px;
+}
+
+.header {
+  padding: 16px 0px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .header .logo_member-rwd {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.header .logo_member-rwd .logo_title {
+  font-family: "Mina", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.88px;
+  padding: 8px 12px;
+  margin-right: 48px;
+  position: relative;
+}
+.header .logo_member-rwd .logo_title .material-icons-outlined {
+  font-size: 10px;
+  color: greenyellow;
+  background-color: greenyellow;
+  border-radius: 100%;
+  position: absolute;
+  left: 110px;
+  top: 10px;
+  z-index: -1;
+}
+.header .logo_member-rwd .member-rwd a {
+  display: none;
+  padding: 15px;
+  font-size: 18px;
+  color: #212529;
+}
+.header .logo_member-rwd .member-rwd a:hover {
+  color: red;
+}
+@media (max-width: 768px) {
+  .header .logo_member-rwd .member-rwd a {
+    display: inline-block;
+  }
+}
+.header .list_member {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .list_member nav .list {
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .header .list_member nav .list {
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .header .list_member nav .list li {
+    width: 48%;
+    text-align: center;
+    /*&:hover{
+        background-color: #c0fa73;
+        color: #ffffff;                    
+    }*/
+  }
+}
+.header .list_member nav .list .btn:hover {
+  color: chartreuse;
+  border-bottom: 1px solid chartreuse;
+}
+@media (max-width: 768px) {
+  .header .list_member .member {
+    display: none;
+  }
+}
+.header .list_member .member a {
+  display: inline-block;
+  padding: 15px;
+  font-size: 18px;
+  color: #212529;
+}
+.header .list_member .member a:hover {
+  color: red;
+}
+
+.gu_pg {
+  margin-bottom: 24px;
+}
+.gu_pg .btn {
+  padding: 0px;
+}
+.gu_pg span {
+  padding-right: 12px;
+}
+.gu_pg .color_ch {
+  padding-right: 12px;
+  color: #6C757D;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url(../image/week3-4/banner.png);
+  background-size: cover;
+  background-position: center;
+}
+.banner .banner-title {
+  position: absolute;
+  top: 36.125%;
+  left: 10.42%;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 480px;
+    background-image: url(../image/week3-4/banner-sm.png);
+  }
+}
+.banner .btn_style {
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-color: #C0FA73;
+}
+.banner h2 {
+  margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 20px;
+  }
+}
+
+/*加入會員&註冊*/
+.join_member {
+  width: 100%;
+  background-color: #E8fec5;
+  padding: 33.5px 0px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+@media (max-width: 768px) {
+  .join_member {
+    flex-direction: column;
+  }
+}
+.join_member .join_member_discount {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 1.2px;
+}
+.join_member .join_member_register {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  background-color: black;
+  padding: 12px 24px;
+}
+.join_member .join_member_register:hover {
+  color: red;
+}
+
+/*頁尾*/
+.footer_logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px 0px 24px 0px;
+}
+@media screen and (max-width: 768px) {
+  .footer_logo {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.footer_logo .logo_title {
+  font-family: "Mina", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.88px;
+  padding: 8px 12px;
+  margin-right: 48px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .footer_logo .logo_title {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.footer_logo .logo_title .material-icons-outlined {
+  font-size: 10px;
+  color: greenyellow;
+  background-color: greenyellow;
+  border-radius: 100%;
+  position: absolute;
+  left: 110px;
+  top: 10px;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .footer_logo .logo_title .material-icons-outlined {
+    left: 100px;
+    top: 2px;
+  }
+}
+.footer_logo nav .list {
+  display: flex;
+  gap: 40px;
+}
+.footer_logo nav .list .btn:hover {
+  color: chartreuse;
+  border-bottom: 1px solid chartreuse;
+}
+
+.footer_statement {
+  padding-top: 32px;
+  margin-bottom: 64px;
+}
+.footer_statement p {
+  margin-bottom: 4px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.7px;
+  color: #6c757D;
 }/*# sourceMappingURL=all.css.map */

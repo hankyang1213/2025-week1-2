@@ -1,0 +1,230 @@
+.header{
+    padding: 16px 0px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width:768px){
+        width: 100%;
+        flex-direction: column;
+    }
+    .logo_member-rwd{
+        @media(max-width:768px){
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo_title{
+            font-family: "Mina", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.88px;
+            padding: 8px 12px;
+            margin-right: 48px;
+            position: relative;
+            .material-icons-outlined{
+                font-size: 10px;
+                color: greenyellow;
+                background-color: greenyellow;
+                border-radius: 100%;
+                position: absolute;
+                left:110px;
+                top: 10px;
+                z-index: -1;
+            }
+        }
+        .member-rwd a{
+            display:none;
+            padding: 15px;
+            font-size: 18px;
+            color: #212529;
+            &:hover{
+                color: red;                
+            }
+            @media(max-width:768px){
+                display: inline-block;
+            }     
+        }
+    }        
+    .list_member{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        nav .list{
+            display: flex;
+            gap:40px;
+            @media(max-width:768px){
+                gap:0px;
+                justify-content: space-between;
+                li{
+                    width: 48%;
+                    text-align: center;
+                    /*&:hover{
+                        background-color: #c0fa73;
+                        color: #ffffff;                    
+                    }*/                   
+                }
+            }            
+            .btn{
+                &:hover{
+                    color: chartreuse;
+                    border-bottom: 1px solid chartreuse;
+                }
+            }            
+        }
+        .member{
+            @media(max-width:768px){
+                display: none;
+            }
+        }
+        .member a{
+            display: inline-block;
+            padding: 15px;
+            font-size: 18px;
+            color: #212529;
+            &:hover{
+                color: red;                
+            }
+        }
+    }
+}
+
+.gu_pg{
+    margin-bottom: 24px;
+    .btn{
+        padding: 0px;
+    }
+    span{
+        padding-right: 12px;
+    }
+    .color_ch{
+        padding-right: 12px;
+        color:#6C757D;
+    }
+}
+.banner{
+    position: relative; 
+    width: 100%;
+    height: 800px; 
+    background-image: url(../image/week3-4/banner.png);
+    background-size: cover;
+    background-position: center;
+    .banner-title{
+        position: absolute;
+        top: 36.125%;
+        left: 10.42%;
+        color: white;
+    }
+    @media screen and (max-width:768px) {
+        height: 480px;
+        background-image: url(../image/week3-4/banner-sm.png);
+    }  
+    .btn_style{
+        padding: 12px 24px;
+        border-radius: 10px;
+        background-color: #C0FA73;
+    }
+    h2{
+        margin-bottom: 16px;
+        @media(max-width:768px){
+            font-size: 20px;
+        }
+    }
+    
+}
+
+/*加入會員&註冊*/
+.join_member{
+    width: 100%;
+    background-color:#E8fec5;
+    padding:33.5px 0px;
+    display: flex;
+    gap:24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    @media(max-width:768px) {
+        flex-direction: column;
+    }
+    .join_member_discount{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 1.2px;
+    }
+    .join_member_register{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing:0.8px;
+        color: #ffffff;
+        background-color: black;
+        padding: 12px 24px;
+        &:hover{
+            color: red;
+        }
+    }
+}
+/*頁尾*/
+.footer_logo{
+    display: flex;
+    justify-content: space-between;
+    margin:64px 0px 24px 0px;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .logo_title{
+        font-family: "Mina", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.88px;
+        padding: 8px 12px;
+        margin-right: 48px;
+        position: relative;
+        @media(max-width:768px){
+            margin: 0px;
+            padding: 0px;
+        }
+        .material-icons-outlined{
+            font-size: 10px;
+            color: greenyellow;
+            background-color: greenyellow;
+            border-radius: 100%;
+            position: absolute;
+            left:110px;
+            top: 10px;
+            z-index: -1;
+            @media(max-width:768px){
+                left:100px;
+                top:2px;
+            }
+        }
+    }
+    nav .list{
+        display: flex;
+        gap:40px;
+        .btn{
+            &:hover{
+                color: chartreuse;
+                border-bottom: 1px solid chartreuse;
+            }
+        }            
+    }
+}
+.footer_statement{
+    padding-top: 32px;
+    margin-bottom:64px;
+    p{
+        margin-bottom: 4px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height:150%;
+        letter-spacing:0.7px;
+        color:#6c757D;
+    }
+}
