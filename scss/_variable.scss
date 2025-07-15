@@ -103,6 +103,29 @@ h5{
     border: 1px solid #999999;
 }
 
+.shop_name{
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 1px;
+}
+.shop_price{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+}
+.hot_sale{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.7px;
+    padding: 8px 12px;
+    background-color: #57A203;
+    color: white;    
+}
 /*網格設置*/
 .container_new{
     max-width: 1296px;
@@ -113,12 +136,12 @@ h5{
     }
 }
 .list_n{
-    /*margin-left: -12px;
+    margin-left: -12px;
     margin-right: -12px;
     @media(max-width:768px){
         margin-left: -6px;
         margin-right: -6px;
-    }*/
+    }
 }
 
 .d-flex{
@@ -129,6 +152,9 @@ h5{
 }
 .mr-12{
     margin-right: 12px;  
+}
+.mb-12{
+    margin-bottom: 12px;
 }
 .ml-12{
     margin-left: 12px;

@@ -59,11 +59,7 @@
                 justify-content: space-between;
                 li{
                     width: 48%;
-                    text-align: center;
-                    /*&:hover{
-                        background-color: #c0fa73;
-                        color: #ffffff;                    
-                    }*/                   
+                    text-align: center;                 
                 }
             }            
             .btn{
@@ -133,7 +129,15 @@
     }
     
 }
-
+.item{
+    position: relative;
+}
+.hot_sale{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 999;
+}
 /*加入會員&註冊*/
 .join_member{
     width: 100%;
